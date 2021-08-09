@@ -6,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h3 {
+            color: teal;
+        }
+    </style>
 </head>
 
 <body>
     <h3>Hello World</h3>
-    <user-card></user-card>
+    <user-card name="Jon Doe" avatar="https://randomuser.me/api/portraits/men/3.jpg">
+        <div slot="email">jondoe@gmail.com</div>
+        <div slot="phone">123-222-3333</div>
+    </user-card>
+    <user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/2.jpg">
+        <div slot="email">janedoe@gmail.com</div>
+        <div slot="phone">456-555-6666</div>
+    </user-card>
     <script src="userCard.js"></script>
 </body>
 
